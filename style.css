@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+}
+.cont {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.main {
+  width: 82%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.float {
+  width: 18%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7rem 0 3rem 0;
+  background-color: #4a5e54;
+  gap: 1.2rem;
+  overflow-y: scroll;
+  transition: all 0.2s;
+}
+.render {
+  width: 90%;
+  min-height: 6.3rem;
+  background-color: #f5f5f5;
+  overflow: hidden;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 2px 0px #48494b;
+  z-index: 10;
+
+  /* justify-content: space-between; */
+}
+.render:hover {
+  cursor: pointer;
+}
+.flag {
+  height: 6.3rem;
+}
+.flag img {
+  height: 100%;
+  width: auto;
+}
+.descont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.desc {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+  align-items: center;
+  /* transform: translateX(-27%); */
+  margin-bottom: 0.3rem;
+  color: rgb(36, 36, 36);
+}
+.desc p {
+  text-align: center;
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: black;
+}
+.float::-webkit-scrollbar {
+  width: 0.75rem;
+  /* background: #dedde04d; */
+  background: #f5f5f5e3;
+  border-radius: 0 0 0 0;
+  border-right: 0.1px solid #4a5e54;
+  border-right: 0.1px solid #919e97;
+}
+.float::-webkit-scrollbar-thumb {
+  width: 0.75rem;
+  background: #919e97;
+  border-radius: 0 0 0 0;
+}
+.nuggle {
+  font-size: 3.6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 5rem;
+  font-family: "Roboto", "Nunito", "Open Sans", sans-serif;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+.nuggle span {
+  text-shadow: 0 0 1.8px #f5f5f5;
+}
+.green {
+  color: #0f9d58;
+}
+.blue {
+  color: #4285f4;
+}
+.red {
+  color: #db4437;
+}
+.yellow {
+  color: #f4b400;
+}
+.popup {
+  font-size: 1.6rem;
+}
+@media (max-width: 92em) {
+  .main {
+    width: 78%;
+  }
+  .float {
+    width: 22%;
+  }
+  .nuggle {
+    font-size: 3.2rem;
+  }
+}
+@media (max-width: 78em) {
+  .main {
+    width: 75%;
+  }
+  .float {
+    width: 25%;
+  }
+}
+@media (max-width: 70em) {
+  .main {
+    width: 72%;
+  }
+  .float {
+    width: 28%;
+  }
+}
+@media (max-width: 61em) {
+  .main {
+    width: 68%;
+  }
+  .float {
+    width: 32%;
+  }
+}
+@media (max-width: 52em) {
+  .main {
+    width: 65%;
+  }
+  .float {
+    width: 35%;
+  }
+}
+@media (max-width: 47em) {
+  .float::-webkit-scrollbar {
+    width: 0;
+  }
+  .float::-webkit-scrollbar-thumb {
+    width: 0;
+  }
+  .cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main {
+    position: relative;
+    order: 2;
+    width: 100vw;
+    height: 75vh;
+  }
+  .float {
+    position: relative;
+    width: 100vw;
+    height: 25vh;
+  }
+  .render {
+    width: 50%;
+  }
+}
+@media (max-width: 31.5em) {
+  .render {
+    width: 60%;
+  }
+}
+@media (max-width: 25em) {
+  .render {
+    width: 70%;
+  }
+}
+@media (max-width: 23em) {
+  .render {
+    width: 85%;
+  }
+}
+@media (max-width: 23em) {
+  .render {
+    width: 85%;
+  }
+}
+@media (max-width: 17em) {
+  .render {
+    width: 95%;
+  }
+}
